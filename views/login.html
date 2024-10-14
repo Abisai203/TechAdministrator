@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Refaccionaria</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+.login-form input::placeholder {
+    color: #bbb;
+}
+
+.login-form button {
+    background-color: #f1c40f;
+    color: #2d2d2d;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #d4ac0d;
+}
+
+    </style>
+    <div class="login-container">
+        <h2>Inicio de Sesión</h2>
+        <form class="login-form">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required>
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+            
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
